@@ -1,0 +1,11 @@
+version: '2'
+services:
+  inventariomicroservicio-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/inventariomicroservicio/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=inventariomicroservicio
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
